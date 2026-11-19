@@ -1,0 +1,85 @@
+{
+  "_comment": "Source de vérité UNIQUE du scoring 'potentiel d'amélioration'. Lue à la fois par tools/compute_score.py (WAT) et par lib/scoring.ts (app Next.js). Modifier les poids/seuils ici se répercute partout.",
+  "version": 1,
+  "weights": {
+    "rating": 30,
+    "reviews": 30,
+    "web_presence": 25,
+    "category": 15
+  },
+  "rating": {
+    "_doc": "Potentiel = marge de progression. Sweet spot = note moyenne (3,5–4,4).",
+    "null_factor": 0.5,
+    "excellent_threshold": 4.8,
+    "excellent_factor": 0.3,
+    "high_threshold": 4.5,
+    "high_factor": 0.55,
+    "sweet_spot_threshold": 3.5,
+    "sweet_spot_factor": 1.0,
+    "low_threshold": 3.0,
+    "low_factor": 0.6,
+    "very_low_factor": 0.35
+  },
+  "reviews": {
+    "_doc": "Peu d'avis = fort potentiel. 0 avis = fiche peut-être inactive (signalée).",
+    "zero_factor": 0.5,
+    "few_threshold": 50,
+    "few_factor": 1.0,
+    "medium_threshold": 150,
+    "medium_factor": 0.6,
+    "many_factor": 0.3
+  },
+  "web_presence": {
+    "_doc": "Site + téléphone = entreprise active et joignable. Aucun = quasi disqualifiant.",
+    "both_factor": 1.0,
+    "one_factor": 0.6,
+    "none_factor": 0.0,
+    "disqualify_if_none": true,
+    "disqualified_score_cap": 15
+  },
+  "category": {
+    "_doc": "Secteurs qui convertissent le mieux pour la génération d'avis Google.",
+    "priority_factor": 1.0,
+    "other_factor": 0.5,
+    "priority_keywords": [
+      "restaurant",
+      "pizzeria",
+      "traiteur",
+      "boulangerie",
+      "patisserie",
+      "cafe",
+      "bar",
+      "coiffeur",
+      "institut",
+      "esthetique",
+      "barbier",
+      "garage",
+      "garagiste",
+      "carrosserie",
+      "plombier",
+      "electricien",
+      "menuisier",
+      "artisan",
+      "serrurier",
+      "fleuriste",
+      "opticien",
+      "dentiste",
+      "kine",
+      "kinesitherapeute",
+      "osteopathe",
+      "veterinaire",
+      "salle de sport",
+      "fitness",
+      "auto-ecole",
+      "immobilier",
+      "bijouterie",
+      "boucherie",
+      "primeur"
+    ]
+  },
+  "tiers": {
+    "A": 75,
+    "B": 50,
+    "C": 25
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Restaurant Exemple",
+    "category": "Restaurant",
+    "address": "10 Rue de la Paix",
+    "city": "Paris",
+    "postal_code": "75002",
+    "phone": "01 23 45 67 89",
+    "website": "https://restaurant-exemple.fr",
+    "google_maps_url": "https://maps.google.com/?cid=123456789",
+    "place_id": "exemple_place_001",
+    "rating": 4.1,
+    "reviews_count": 37,
+    "latitude": 48.8686,
+    "longitude": 2.3312
+  },
+  {
+    "name": "Coiffeur Exemple",
+    "category": "Coiffeur",
+    "address": "5 Avenue des Fleurs",
+    "city": "Lyon",
+    "postal_code": "69003",
+    "phone": "04 72 00 00 00",
+    "website": "",
+    "google_maps_url": "https://maps.google.com/?cid=987654321",
+    "place_id": "exemple_place_002",
+    "rating": 3.9,
+    "reviews_count": 12,
+    "latitude": 45.752,
+    "longitude": 4.857
+  }
+]

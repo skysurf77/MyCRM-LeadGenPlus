@@ -1,0 +1,42 @@
+# Dépendances
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+
+# Divers
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+# Secrets — NE JAMAIS committer (checklist secure.md)
+.env
+.env*.local
+.env.local
+credentials.json
+token.json
+
+# Python (outils WAT)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temporaire — jetable
+/.tmp/
+
+# Residu Windows : `> nul` cree un vrai fichier sous Git Bash
+/nul
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

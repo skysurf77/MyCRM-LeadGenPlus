@@ -1,0 +1,3 @@
+name,category,address,city,postal_code,phone,website,google_maps_url,place_id,rating,reviews_count,latitude,longitude
+Restaurant Exemple,Restaurant,10 Rue de la Paix,Paris,75002,01 23 45 67 89,https://restaurant-exemple.fr,https://maps.google.com/?cid=123456789,exemple_place_001,4.1,37,48.8686,2.3312
+Coiffeur Exemple,Coiffeur,5 Avenue des Fleurs,Lyon,69003,04 72 00 00 00,,https://maps.google.com/?cid=987654321,exemple_place_002,3.9,12,45.7520,4.8570

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 24% 18%;
+  --surface: 210 40% 98%;
+  --muted: 210 24% 95%;
+  --muted-foreground: 215 16% 47%;
+  --border: 214 22% 90%;
+  --input: 214 22% 86%;
+
+  /* Bleu clair « confiance » */
+  --brand: 205 98% 55%;
+  --brand-soft: 210 100% 96%;
+  --brand-foreground: 0 0% 100%;
+  --ring: 205 98% 55%;
+
+  /* Corail / orange — CTA primaires */
+  --accent: 11 100% 67%;
+  --accent-soft: 12 100% 95%;
+  --accent-foreground: 0 0% 100%;
+
+  /* Pastilles de tier */
+  --tier-a: 11 100% 63%;
+  --tier-b: 38 92% 50%;
+  --tier-c: 205 90% 52%;
+  --tier-d: 215 14% 58%;
+
+  /* Dataviz — palette validee (contraste >= 3:1, separation CVD).
+     Les teintes de marque sont trop claires sur fond blanc pour porter
+     une barre de graphique : ces steps leur sont dedies. */
+  --chart-1: 205 90% 45%;        /* #0b82d8 — magnitude, serie unique */
+  --chart-good: 160 94% 30%;     /* #059669 — statut « gagne » */
+  --chart-bad: 0 72% 51%;        /* #dc2626 — statut « perdu » */
+  --chart-grid: 214 22% 90%;     /* filet 1px, un cran au-dessus du fond */
+}
+
+:root[data-theme="dark"] {
+  --background: 222 28% 10%;
+  --foreground: 210 20% 92%;
+  --surface: 222 24% 13%;
+  --muted: 222 18% 18%;
+  --muted-foreground: 215 16% 65%;
+  --border: 222 16% 22%;
+  --input: 222 16% 26%;
+  --brand: 205 90% 60%;
+  --brand-soft: 210 60% 18%;
+  --accent: 11 95% 65%;
+  --accent-soft: 12 50% 20%;
+
+  /* Dataviz en mode sombre : steps choisis (jamais un simple inverse),
+     valides contre la surface sombre. */
+  --chart-1: 206 60% 52%;        /* #3b8fd0 */
+  --chart-good: 157 71% 35%;     /* #1a9b6b */
+  --chart-bad: 0 71% 62%;        /* #e15a5a */
+  --chart-grid: 222 16% 24%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Barre de défilement discrète */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 9999px;
+  border: 2px solid hsl(var(--background));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}

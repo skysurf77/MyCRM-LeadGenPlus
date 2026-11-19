@@ -1,0 +1,165 @@
+{
+  "_comment": "Tâches de démonstration Phase 3. `due_offset` est un nombre de jours relatif à la date d'exécution du seed (négatif = en retard, 0 = aujourd'hui) : la démo reste réaliste quel que soit le jour où on la rejoue. `contact_key` renvoie aux contacts de seed_phase2.json.",
+  "tasks": [
+    {
+      "key": "task-zinc-relance",
+      "place_id": "demo_place_007",
+      "contact_key": "zinc-karim",
+      "title": "Relancer Karim — pas de réponse au 1er email",
+      "type": "follow_up",
+      "priority": "haute",
+      "due_offset": -8,
+      "status": "todo"
+    },
+    {
+      "key": "task-boucherie-appel",
+      "place_id": "demo_place_006",
+      "contact_key": "dupont-marc",
+      "title": "Appeler la Boucherie Dupont (midi à éviter)",
+      "type": "call",
+      "priority": "haute",
+      "due_offset": -4,
+      "status": "todo"
+    },
+    {
+      "key": "task-fleurs-premier-contact",
+      "place_id": "demo_place_025",
+      "contact_key": "fleurs-amandine",
+      "title": "Premier contact — angle : avis de livraison en retard",
+      "type": "call",
+      "priority": "normale",
+      "due_offset": -1,
+      "status": "todo"
+    },
+    {
+      "key": "task-bouchon-offre",
+      "place_id": "demo_place_001",
+      "contact_key": "bouchon-julien",
+      "title": "Relancer sur l'offre envoyée la semaine dernière",
+      "type": "follow_up",
+      "priority": "haute",
+      "due_offset": 0,
+      "status": "todo"
+    },
+    {
+      "key": "task-optique-demo",
+      "place_id": "demo_place_016",
+      "contact_key": "optique-helene",
+      "title": "Audit de la fiche Google en visio (30 min)",
+      "type": "demo",
+      "priority": "haute",
+      "due_offset": 0,
+      "status": "todo"
+    },
+    {
+      "key": "task-primeur-email",
+      "place_id": "demo_place_009",
+      "contact_key": "primeur-elodie",
+      "title": "Envoyer l'email d'accroche personnalisé",
+      "type": "email",
+      "priority": "normale",
+      "due_offset": 0,
+      "status": "todo"
+    },
+    {
+      "key": "task-eclat-demo",
+      "place_id": "demo_place_011",
+      "contact_key": "eclat-camille",
+      "title": "Démo produit — préparer les captures du salon",
+      "type": "demo",
+      "priority": "haute",
+      "due_offset": 1,
+      "status": "todo"
+    },
+    {
+      "key": "task-kine-proposition",
+      "place_id": "demo_place_015",
+      "contact_key": "kine-thomas",
+      "title": "Relancer sur la proposition (décision attendue)",
+      "type": "follow_up",
+      "priority": "normale",
+      "due_offset": 2,
+      "status": "todo"
+    },
+    {
+      "key": "task-zen-linkedin",
+      "place_id": "demo_place_012",
+      "contact_key": "zen-laetitia",
+      "title": "Connexion LinkedIn + message d'introduction",
+      "type": "linkedin",
+      "priority": "basse",
+      "due_offset": 3,
+      "status": "todo"
+    },
+    {
+      "key": "task-meme-appel",
+      "place_id": "demo_place_004",
+      "contact_key": "meme-nadia",
+      "title": "Appeler Nadia — 9 avis seulement, fort potentiel",
+      "type": "call",
+      "priority": "normale",
+      "due_offset": 4,
+      "status": "todo"
+    },
+    {
+      "key": "task-serrurier-appel",
+      "place_id": "demo_place_029",
+      "contact_key": "serrurier-driss",
+      "title": "Appeler le serrurier — argument urgence 24/7",
+      "type": "call",
+      "priority": "normale",
+      "due_offset": 5,
+      "status": "todo"
+    },
+    {
+      "key": "task-barber-enrichir",
+      "place_id": "demo_place_013",
+      "contact_key": "barber-yanis",
+      "title": "Trouver l'email de Yanis avant de prospecter",
+      "type": "other",
+      "priority": "basse",
+      "due_offset": 7,
+      "status": "todo"
+    },
+    {
+      "key": "task-bijou-linkedin",
+      "place_id": "demo_place_027",
+      "contact_key": "bijou-isabelle",
+      "title": "Message LinkedIn — bijouterie, période de fêtes",
+      "type": "linkedin",
+      "priority": "normale",
+      "due_offset": 12,
+      "status": "todo"
+    },
+    {
+      "key": "task-garage-onboarding",
+      "place_id": "demo_place_021",
+      "contact_key": "garage-stephane",
+      "title": "Appel d'onboarding après signature",
+      "type": "call",
+      "priority": "normale",
+      "due_offset": -10,
+      "status": "done"
+    },
+    {
+      "key": "task-osteo-signature",
+      "place_id": "demo_place_018",
+      "contact_key": "osteo-claire",
+      "title": "Envoyer le contrat à signer",
+      "type": "email",
+      "priority": "haute",
+      "due_offset": -6,
+      "status": "done"
+    },
+    {
+      "key": "task-immo-cloture",
+      "place_id": "demo_place_026",
+      "contact_key": "immo-vincent",
+      "title": "Noter la raison de la perte et clôturer",
+      "type": "other",
+      "priority": "basse",
+      "due_offset": -3,
+      "status": "done"
+    }
+  ]
+}
